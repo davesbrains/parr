@@ -13,7 +13,7 @@ System.register([], function(exports_1, context_1) {
                 * Safe for consuming service to morph arrays and objects.
                 */
                 InMemoryStoryService.prototype.createDb = function () {
-                    var characters = [
+                    var contacts = [
                         {
                             "id": 11,
                             "name": "Chewbacca",
@@ -152,7 +152,7 @@ System.register([], function(exports_1, context_1) {
                             "type": "land"
                         }
                     ];
-                    return { characters: characters, vehicles: vehicles };
+                    return { contacts: contacts, vehicles: vehicles };
                 };
                 return InMemoryStoryService;
             }());

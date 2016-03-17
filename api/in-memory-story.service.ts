@@ -4,7 +4,7 @@ export class InMemoryStoryService {
   * Safe for consuming service to morph arrays and objects.
   */
   createDb() {
-    let characters = [
+    let contacts = [
       {
         "id": 11,
         "name": "Chewbacca",
@@ -145,6 +145,6 @@ export class InMemoryStoryService {
       }
     ]
 
-    return { characters, vehicles };
+    return { contacts, vehicles };
   }
 }
