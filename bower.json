@@ -1,0 +1,21 @@
+{
+  "name": "parr",
+  "description": "Parr Cabinet Design - Special Order Confirmation website",
+  "main": "index.html",
+  "authors": [
+    "David S Miller"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular2": "^2.0.0-beta.9"
+  }
+}

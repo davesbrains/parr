@@ -1,0 +1,25 @@
+{
+  "name": "parr",
+  "version": "1.0.0",
+  "description": "Parr Cabinet Design - Special Order Confirmation website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davesbrains/parr.git"
+  },
+  "author": "David S Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davesbrains/parr/issues"
+  },
+  "homepage": "https://github.com/davesbrains/parr#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}
