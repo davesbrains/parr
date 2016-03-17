@@ -67,7 +67,7 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../cha
                 };
                 CharacterComponent.prototype.ngOnInit = function () {
                     var _this = this;
-                    componentHandler.upgradeDom();
+                    //componentHandler.upgradeDom();
                     this._getCharacter();
                     this._dbResetSubscription = this._characterService.onDbReset
                         .subscribe(function () { return _this._getCharacter(); });
@@ -98,7 +98,7 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../cha
                     if (id === 0)
                         return;
                     if (this.isAddMode()) {
-                        this.character = { name: '', side: 'dark' };
+                        this.character = { name: '', type: 'dark' };
                         this.editCharacter = this._entityService.clone(this.character);
                         return;
                     }

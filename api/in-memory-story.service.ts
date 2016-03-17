@@ -8,82 +8,82 @@ export class InMemoryStoryService {
       {
         "id": 11,
         "name": "Chewbacca",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 12,
         "name": "Rey",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 13,
         "name": "Finn (FN2187)",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 14,
         "name": "Han Solo",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 15,
         "name": "Leia Organa",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 16,
         "name": "Luke Skywalker",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 17,
         "name": "Poe Dameron",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 18,
         "name": "Kylo Ren",
-        "side": "dark"
+        "type": "dark"
       },
       {
         "id": 19,
         "name": "Supreme Commander Snoke",
-        "side": "dark"
+        "type": "dark"
       },
       {
         "id": 20,
         "name": "R2-D2",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 21,
         "name": "BB8",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 22,
         "name": "C-3PO",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 23,
         "name": "Maz Kanata",
-        "side": "light"
+        "type": "light"
       },
       {
         "id": 24,
         "name": "Captain Phasma",
-        "side": "dark"
+        "type": "dark"
       },
       {
         "id": 25,
         "name": "General Hux",
-        "side": "dark"
+        "type": "dark"
       },
       {
         "id": 26,
         "name": "Lor San Tekka",
-        "side": "light"
+        "type": "light"
       }
     ];
 

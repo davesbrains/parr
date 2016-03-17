@@ -49,14 +49,14 @@ export class CharacterComponent implements CanDeactivate, OnDestroy, OnInit {
   isAddMode() {
     let id = +this._routeParams.get('id');
     return isNaN(id);
-  }
+  }S
 
   ngOnDestroy() {
     this._dbResetSubscription.unsubscribe();
   }
 
   ngOnInit() {
-    componentHandler.upgradeDom();
+    //componentHandler.upgradeDom();
     this._getCharacter();
     this._dbResetSubscription = this._characterService.onDbReset
       .subscribe(() => this._getCharacter());
@@ -87,7 +87,7 @@ export class CharacterComponent implements CanDeactivate, OnDestroy, OnInit {
     let id = +this._routeParams.get('id');
     if (id === 0) return;
     if (this.isAddMode()) {
-      this.character = <Character>{ name: '', side: 'dark' };
+      this.character = <Character>{ name: '', type: 'dark' };
       this.editCharacter = this._entityService.clone(this.character);
       return;
     }
