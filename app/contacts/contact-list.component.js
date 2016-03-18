@@ -37,7 +37,7 @@ System.register(['angular2/core', 'angular2/router', './contact.service', './sor
                     this.filteredContacts = this.contacts;
                 }
                 ContactListComponent.prototype.filterChanged = function (searchText) {
-                    this.filteredContacts = this._filterService.filter(searchText, ['id', 'company_name', 'type'], this.contacts);
+                    this.filteredContacts = this._filterService.filter(searchText, ['id', 'last_name', 'type'], this.contacts);
                 };
                 ContactListComponent.prototype.getContacts = function () {
                     var _this = this;

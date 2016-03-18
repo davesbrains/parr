@@ -41,18 +41,18 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../con
                     if (showToast === void 0) { showToast = true; }
                     this.editContact = this._entityService.clone(this.contact);
                     if (showToast) {
-                        this._toastService.activate("Cancelled changes to " + this.contact.company_name);
+                        this._toastService.activate("Cancelled changes to " + this.contact.last_name);
                     }
                 };
                 ContactComponent.prototype.delete = function () {
                     var _this = this;
-                    var msg = "Do you want to delete " + this.contact.company_name + "?";
+                    var msg = "Do you want to delete " + this.contact.last_name + "?";
                     this._modalService.activate(msg).then(function (responseOK) {
                         if (responseOK) {
                             _this.cancel(false);
                             _this._contactService.deleteContact(_this.contact)
                                 .subscribe(function () {
-                                _this._toastService.activate("Deleted " + _this.contact.company_name);
+                                _this._toastService.activate("Deleted " + _this.contact.last_name);
                                 _this._gotoContacts();
                             });
                         }
@@ -84,13 +84,13 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../con
                         this._contactService.addContact(contact)
                             .subscribe(function (con) {
                             _this._setEditContact(con);
-                            _this._toastService.activate("Successfully added " + con.company_name);
+                            _this._toastService.activate("Successfully added " + con.last_name);
                             _this._gotoContacts();
                         });
                         return;
                     }
                     this._contactService.updateContact(contact)
-                        .subscribe(function () { return _this._toastService.activate("Successfully saved " + contact.company_name); });
+                        .subscribe(function () { return _this._toastService.activate("Successfully saved " + contact.last_name); });
                 };
                 ContactComponent.prototype._getContact = function () {
                     var _this = this;
@@ -98,7 +98,7 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../con
                     if (id === 0)
                         return;
                     if (this.isAddMode()) {
-                        this.contact = { company_name: '', type: 'dark' };
+                        this.contact = { last_name: '', type: 'dark' };
                         this.editContact = this._entityService.clone(this.contact);
                         return;
                     }

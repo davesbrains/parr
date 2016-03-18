@@ -28,18 +28,18 @@ export class ContactComponent implements CanDeactivate, OnDestroy, OnInit {
   cancel(showToast = true) {
     this.editContact = this._entityService.clone(this.contact);
     if (showToast) {
-      this._toastService.activate(`Cancelled changes to ${this.contact.company_name}`);
+      this._toastService.activate(`Cancelled changes to ${this.contact.last_name}`);
     }
   }
 
   delete() {
-    let msg = `Do you want to delete ${this.contact.company_name}?`;
+    let msg = `Do you want to delete ${this.contact.last_name}?`;
     this._modalService.activate(msg).then(responseOK => {
       if (responseOK) {
         this.cancel(false);
         this._contactService.deleteContact(this.contact)
           .subscribe(() => {
-            this._toastService.activate(`Deleted ${this.contact.company_name}`);
+            this._toastService.activate(`Deleted ${this.contact.last_name}`);
             this._gotoContacts();
           });
       }
@@ -50,7 +50,7 @@ export class ContactComponent implements CanDeactivate, OnDestroy, OnInit {
     let id = +this._routeParams.get('id');
     return isNaN(id);
   }
-  
+
   ngOnDestroy() {
     this._dbResetSubscription.unsubscribe();
   }
@@ -74,20 +74,20 @@ export class ContactComponent implements CanDeactivate, OnDestroy, OnInit {
       this._contactService.addContact(contact)
         .subscribe(con => {
           this._setEditContact(con);
-          this._toastService.activate(`Successfully added ${con.company_name}`);
+          this._toastService.activate(`Successfully added ${con.last_name}`);
           this._gotoContacts();
         });
       return;
     }
     this._contactService.updateContact(contact)
-      .subscribe(() => this._toastService.activate(`Successfully saved ${contact.company_name}`));
+      .subscribe(() => this._toastService.activate(`Successfully saved ${contact.last_name}`));
   }
 
   private _getContact() {
     let id = +this._routeParams.get('id');
     if (id === 0) return;
     if (this.isAddMode()) {
-      this.contact = <Contact>{ company_name: '', type: 'dark' };
+      this.contact = <Contact>{ last_name: '', type: 'dark' };
       this.editContact = this._entityService.clone(this.contact);
       return;
     }

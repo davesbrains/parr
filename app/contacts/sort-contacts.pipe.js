@@ -26,10 +26,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         return value;
                     }
                     return value.sort(function (a, b) {
-                        if (a.company_name < b.company_name) {
+                        if (a.last_name < b.last_name) {
                             return -1;
                         }
-                        if (a.company_name > b.company_name) {
+                        if (a.last_name > b.last_name) {
                             return 1;
                         }
                         return 0;

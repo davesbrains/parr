@@ -7,8 +7,8 @@ export class SortContactsPipe implements PipeTransform {
     if (!value || !value.sort) { return value; }
 
     return value.sort((a: Contact, b: Contact) => {
-      if (a.company_name < b.company_name) { return -1; }
-      if (a.company_name > b.company_name) { return 1; }
+      if (a.last_name < b.last_name) { return -1; }
+      if (a.last_name > b.last_name) { return 1; }
       return 0;
     });
   }

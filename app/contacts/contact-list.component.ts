@@ -25,7 +25,7 @@ export class ContactListComponent implements OnDestroy, OnInit {
     private _filterService: FilterService) { }
 
   filterChanged(searchText: string) {
-    this.filteredContacts = this._filterService.filter(searchText, ['id', 'company_name', 'type'], this.contacts);
+    this.filteredContacts = this._filterService.filter(searchText, ['id', 'last_name', 'type'], this.contacts);
   }
 
   getContacts() {
