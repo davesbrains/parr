@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx', 'a2-in-memory-web-api/core', '../api/in-memory-story.service', './contacts/contacts', './dashboard/dashboard', './vehicles/vehicles', './shared/shared', './blocks/blocks'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx', 'a2-in-memory-web-api/core', '../api/in-memory-story.service', './contacts/contacts', './login/login', './dashboard/dashboard', './vehicles/vehicles', './shared/shared', './blocks/blocks'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, router_1, core_2, in_memory_story_service_1, contacts_1, dashboard_1, vehicles_1, shared_1, blocks_1;
+    var core_1, http_1, router_1, core_2, in_memory_story_service_1, contacts_1, login_1, dashboard_1, vehicles_1, shared_1, blocks_1;
     var AppComponent;
     return {
         setters:[
@@ -33,6 +33,9 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
             function (contacts_1_1) {
                 contacts_1 = contacts_1_1;
             },
+            function (login_1_1) {
+                login_1 = login_1_1;
+            },
             function (dashboard_1_1) {
                 dashboard_1 = dashboard_1_1;
             },
@@ -53,7 +56,8 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                     this.menuItems = [
                         { caption: 'Dashboard', link: ['Dashboard'] },
                         { caption: 'Contacts', link: ['Contacts'] },
-                        { caption: 'Vehicles', link: ['Vehicles'] }
+                        { caption: 'Vehicles', link: ['Vehicles'] },
+                        { caption: 'Login', link: ['Login'] }
                     ];
                 }
                 AppComponent.prototype.resetDb = function () {
@@ -78,6 +82,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                             core_1.provide(core_2.InMemoryBackendConfig, { useValue: { delay: 600 } }),
                             router_1.ROUTER_PROVIDERS,
                             contacts_1.ContactService,
+                            login_1.LoginService,
                             blocks_1.EntityService,
                             blocks_1.ExceptionService,
                             shared_1.MessageService,
@@ -90,6 +95,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                         { path: '/dashboard', name: 'Dashboard', component: dashboard_1.DashboardComponent, useAsDefault: true },
                         { path: '/vehicles/...', name: 'Vehicles', component: vehicles_1.VehiclesComponent },
                         { path: '/contacts/...', name: 'Contacts', component: contacts_1.ContactsComponent },
+                        { path: '/login/...', name: 'Login', component: login_1.LoginComponent },
                     ]), 
                     __metadata('design:paramtypes', [shared_1.MessageService, blocks_1.ModalService])
                 ], AppComponent);

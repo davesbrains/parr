@@ -1,0 +1,24 @@
+<article class="template animated slideInRight">
+  <h4>Login</h4>
+  <div>
+    <div class="mdl-grid">
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="mdl-textfield__label" for="nametext">OnePageCRM User Name (Parr email address)</label>
+        <input type="text" id="nametext" class="mdl-textfield__input" [(ngModel)]="loginUser.user_name" />
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="mdl-textfield__label" for="typetext">Password</label>
+        <input type="text" id="typetext" class="mdl-textfield__input" [(ngModel)]="loginUser.password" />
+      </div>
+      <div>
+        <button class="login-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect
+      mdl-button--accent" (click)="login()">Login</button>
+      </div>
+
+    </div>
+  </div>
+</article>
+
+

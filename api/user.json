@@ -1,2242 +1,629 @@
 {
-"data": {
-"status": 0,
-"message": "OK",
-"timestamp": 1456593230,
-"data": {
-"user_id": "54e390701787fa07c3000036",
-"auth_key": "PzyCY99rXh388gojaTv2R7GMCd9uQjxf0DUuNVQ47Ys=",
-"account_type": "pro",
-"custom_fields": [
-{
-"custom_field": {
-"id": "54ad6e281787fa1f75000037",
-"choices": [
-"Aloha- 185th",
-"NE Portland",
-"Fife",
-"Tukwila",
-"Everett",
-"Peoria"
-],
-"name": "Location",
-"position": 0,
-"type": "select_box",
-"reminder_days": null
+  "user_id": "54e390701787fa07c3000036",
+  "auth_key": "PzyCY99rXh388gojaTv2R7GMCd9uQjxf0DUuNVQ47Ys=",
+  "account_type": "pro",
+  "custom_fields": [
+    {
+      "custom_field": {
+        "id": "54ad6e281787fa1f75000037",
+        "choices": [
+          "Aloha- 185th",
+          "NE Portland",
+          "Fife",
+          "Tukwila",
+          "Everett",
+          "Peoria"
+        ],
+        "name": "Location",
+        "position": 0,
+        "type": "select_box",
+        "reminder_days": null
+      }
+    },
+    {
+      "custom_field": {
+        "id": "54b56a3b1787fa3383000028",
+        "choices": [],
+        "name": "PARR ACCT #",
+        "position": 1,
+        "type": "single_line_text",
+        "reminder_days": null
+      }
+    }
+  ],
+  "filters": [
+    {
+      "filter": {
+        "id": "54b56a7f1787fa347a00000a",
+        "name": "Loc = Aloha-185th"
+      }
+    },
+    {
+      "filter": {
+        "id": "54d954f81787fa29ed00000b",
+        "name": "Loc = Everett"
+      }
+    },
+    {
+      "filter": {
+        "id": "54d954be1787fa27da00004d",
+        "name": "Loc = Fife"
+      }
+    },
+    {
+      "filter": {
+        "id": "54d954d31787fa27da00005c",
+        "name": "Loc = NE Portland"
+      }
+    },
+    {
+      "filter": {
+        "id": "54d955141787fa29ed000018",
+        "name": "Loc = Peoria"
+      }
+    },
+    {
+      "filter": {
+        "id": "54d954e71787fa29ed000006",
+        "name": "Loc = Tukwila"
+      }
+    },
+    {
+      "filter": {
+        "id": "54ad66481787fa01af000056",
+        "name": "Pending deals"
+      }
+    },
+    {
+      "filter": {
+        "id": "54f4a5061787fa05b3000035",
+        "name": "Peoria_Actions"
+      }
+    },
+    {
+      "filter": {
+        "id": "54ad66481787fa01af000055",
+        "name": "Prospects with pending deals"
+      }
+    }
+  ],
+  "call_results": {
+    "interested": "Interested",
+    "not_interested": "Not interested",
+    "left_message": "Left message",
+    "no_answer": "No answer",
+    "other": "Other"
+  },
+  "team": [
+    {
+      "user": {
+        "id": "5512e6751787fa1e5b000020",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "melissa.hogfoss@parr.com",
+        "first_name": "MELISSA",
+        "last_name": "HOGFOSS",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5509ebd11787fa1a99000057",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "dan.wallace@parr.com",
+        "first_name": "DAN",
+        "last_name": "WALLACE",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "550a041b1787fa4c3700002f",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "kelsey.smith@parr.com",
+        "first_name": "KELSEY",
+        "last_name": "SMITH",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "54de57221787fa7690000012",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "chris.aley@parr.com",
+        "first_name": "Chris",
+        "last_name": "Aley",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5509f1bf1787fa27c900001a",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "jasonp@parr.com",
+        "first_name": "JASON",
+        "last_name": "PROCTER",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5595905c1787fa7010000c8b",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "sonya.wallace@parr.com",
+        "first_name": "SONYA",
+        "last_name": "WALLACE",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "559e7cd51787fa2b25000005",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "john.adame@parr.com",
+        "first_name": "JOHN",
+        "last_name": "ADAME",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "54ad65381787fa7db500001d",
+        "account_rights": [
+          "account_owner",
+          "admin"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "jeffreyc@parr.com",
+        "first_name": "Jeff",
+        "last_name": "Cox",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "563bc7821787fa48990018f8",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "email": "kelly.morse@parr.com",
+        "first_name": "KELLY",
+        "last_name": "MORSE",
+        "company_name": "",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5509e9851787fa15d8000017",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "jordanc@parr.com",
+        "first_name": "JORDAN",
+        "last_name": "COX",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "54efa0191787fa40ac00000d",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "brianb@parr.com",
+        "first_name": "Brian",
+        "last_name": "Busey",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5512e5f41787fa1cff00000d",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "brad.wilson@parr.com",
+        "first_name": "BRAD",
+        "last_name": "WILSON",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "56ce2af600d4afef550003f7",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "email": "robert.klesper@parr.com",
+        "first_name": "Robert",
+        "last_name": "Klesper",
+        "company_name": "",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5509f3fe1787fa2cec000004",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "steven.morrow@parr.com",
+        "first_name": "STEVE",
+        "last_name": "MORROW",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "55665d611787fa2f8b00014f",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "debbie.walz@parr.com",
+        "first_name": "DEBBIE",
+        "last_name": "WALZ",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "54ad75181787fa399b000001",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "fabiot@parr.com",
+        "first_name": "Fabio",
+        "last_name": "Testa",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "55133a391787fa06ae000002",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "davem@parr.com",
+        "first_name": "DAVE",
+        "last_name": "MEANS",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5631166a1787fa01db000003",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "email": "michael.wheeler@parr.com",
+        "first_name": "MICHAEL",
+        "last_name": "WHEELER",
+        "company_name": "",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "56cf578e00d4afba61000004",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "email": "jeremiah.yeager@parr.com",
+        "first_name": "JEREMIAH",
+        "last_name": "YEAGER",
+        "company_name": "",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "54e67e9c1787fa059000000e",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "paulf@parr.com",
+        "first_name": "Paul",
+        "last_name": "Feinauer",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "559590f71787fa7010000d1e",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "debra.boles@parr.com",
+        "first_name": "DEBRA",
+        "last_name": "BOLES",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5512e62b1787fa1dad00000b",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "janelle.johnson@parr.com",
+        "first_name": "JANELLE",
+        "last_name": "DALY",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5509ceff1787fa5310000017",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "mike.bierly@parr.com",
+        "first_name": "MIKE",
+        "last_name": "BIERLY",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "550a05271787fa4e3d000007",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "andonm@parr.com",
+        "first_name": "ANDON",
+        "last_name": "MARTIN",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5543b7de1787fa71b2000027",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "karen.fugate@parr.com",
+        "first_name": "Karen",
+        "last_name": "Fugate",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5553dd0e1787fa540900035f",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "oscar.talavera@parr.com",
+        "first_name": "OSCAR",
+        "last_name": "TALAVERA",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "56ce2ada00d4afef550003a9",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export",
+          "delete_contacts"
+        ],
+        "email": "denise.holland@parr.com",
+        "first_name": "Denise",
+        "last_name": "Holland",
+        "company_name": "",
+        "photo_url": ""
+      }
+    },
+    {
+      "user": {
+        "id": "5554d46c1787fa20f8000bc9",
+        "account_rights": [
+          "activity",
+          "pipeline",
+          "edit_target",
+          "export"
+        ],
+        "company_name": "Parr Cabinet Design Center",
+        "email": "luis.malvaez@parr.com",
+        "first_name": "LUIS",
+        "last_name": "MALVAEZ",
+        "photo_url": ""
+      }
+    }
+  ],
+  "settings": {
+    "reminder": {
+      "type": "every_day",
+      "hour": 6
+    },
+    "time_zone": "pacifictimeuscanada",
+    "date_format": "%m/%d/%Y",
+    "listing_size": 25,
+    "currency": "USD",
+    "currency_symbol": "$",
+    "popular_countries": [
+      "US"
+    ],
+    "deal_stages": [
+      {
+        "stage": 10,
+        "label": "Qualification"
+      },
+      {
+        "stage": 25,
+        "label": null
+      },
+      {
+        "stage": 50,
+        "label": "Decision"
+      },
+      {
+        "stage": 75,
+        "label": null
+      },
+      {
+        "stage": 90,
+        "label": "Negotiation"
+      }
+    ],
+    "default_contact_type": "individual",
+    "show_tidy_stream": true
+  },
+  "user": {
+    "user": {
+      "id": "54e390701787fa07c3000036",
+      "account_rights": [
+        "activity",
+        "pipeline",
+        "edit_target",
+        "export",
+        "delete_contacts"
+      ],
+      "bcc_email": "54e390701787fa07c3000037@users.onepagecrm.com",
+      "company_name": "Parr Cabinet Design Center",
+      "email": "dixon.oliver@parr.com",
+      "first_name": "Dixon",
+      "last_name": "Oliver",
+      "photo_url": ""
+    }
+  }
 }
-},
-{
-"custom_field": {
-"id": "54b56a3b1787fa3383000028",
-"choices": [],
-"name": "PARR ACCT #",
-"position": 1,
-"type": "single_line_text",
-"reminder_days": null
-}
-}
-],
-"filters": [
-{
-"filter": {
-"id": "54b56a7f1787fa347a00000a",
-"name": "Loc = Aloha-185th"
-}
-},
-{
-"filter": {
-"id": "54d954f81787fa29ed00000b",
-"name": "Loc = Everett"
-}
-},
-{
-"filter": {
-"id": "54d954be1787fa27da00004d",
-"name": "Loc = Fife"
-}
-},
-{
-"filter": {
-"id": "54d954d31787fa27da00005c",
-"name": "Loc = NE Portland"
-}
-},
-{
-"filter": {
-"id": "54d955141787fa29ed000018",
-"name": "Loc = Peoria"
-}
-},
-{
-"filter": {
-"id": "54d954e71787fa29ed000006",
-"name": "Loc = Tukwila"
-}
-},
-{
-"filter": {
-"id": "54ad66481787fa01af000056",
-"name": "Pending deals"
-}
-},
-{
-"filter": {
-"id": "54f4a5061787fa05b3000035",
-"name": "Peoria_Actions"
-}
-},
-{
-"filter": {
-"id": "54ad66481787fa01af000055",
-"name": "Prospects with pending deals"
-}
-}
-],
-"call_results": {
-"interested": "Interested",
-"not_interested": "Not interested",
-"left_message": "Left message",
-"no_answer": "No answer",
-"other": "Other"
-},
-"team": [
-{
-"user": {
-"id": "5512e6751787fa1e5b000020",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "melissa.hogfoss@parr.com",
-"first_name": "MELISSA",
-"last_name": "HOGFOSS",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5509ebd11787fa1a99000057",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "dan.wallace@parr.com",
-"first_name": "DAN",
-"last_name": "WALLACE",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "550a041b1787fa4c3700002f",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "kelsey.smith@parr.com",
-"first_name": "KELSEY",
-"last_name": "SMITH",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "54de57221787fa7690000012",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "chris.aley@parr.com",
-"first_name": "Chris",
-"last_name": "Aley",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5509f1bf1787fa27c900001a",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "jasonp@parr.com",
-"first_name": "JASON",
-"last_name": "PROCTER",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5595905c1787fa7010000c8b",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "sonya.wallace@parr.com",
-"first_name": "SONYA",
-"last_name": "WALLACE",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "559e7cd51787fa2b25000005",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "john.adame@parr.com",
-"first_name": "JOHN",
-"last_name": "ADAME",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "54ad65381787fa7db500001d",
-"account_rights": ["account_owner", "admin"],
-"company_name": "Parr Cabinet Design Center",
-"email": "jeffreyc@parr.com",
-"first_name": "Jeff",
-"last_name": "Cox",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "563bc7821787fa48990018f8",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"email": "kelly.morse@parr.com",
-"first_name": "KELLY",
-"last_name": "MORSE",
-"company_name": "",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5509e9851787fa15d8000017",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "jordanc@parr.com",
-"first_name": "JORDAN",
-"last_name": "COX",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "54efa0191787fa40ac00000d",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "brianb@parr.com",
-"first_name": "Brian",
-"last_name": "Busey",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5512e5f41787fa1cff00000d",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "brad.wilson@parr.com",
-"first_name": "BRAD",
-"last_name": "WILSON",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "56ce2af600d4afef550003f7",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"email": "robert.klesper@parr.com",
-"first_name": "Robert",
-"last_name": "Klesper",
-"company_name": "",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5509f3fe1787fa2cec000004",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "steven.morrow@parr.com",
-"first_name": "STEVE",
-"last_name": "MORROW",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "55665d611787fa2f8b00014f",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "debbie.walz@parr.com",
-"first_name": "DEBBIE",
-"last_name": "WALZ",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "54ad75181787fa399b000001",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "fabiot@parr.com",
-"first_name": "Fabio",
-"last_name": "Testa",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "55133a391787fa06ae000002",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "davem@parr.com",
-"first_name": "DAVE",
-"last_name": "MEANS",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5631166a1787fa01db000003",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"email": "michael.wheeler@parr.com",
-"first_name": "MICHAEL",
-"last_name": "WHEELER",
-"company_name": "",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "56cf578e00d4afba61000004",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"email": "jeremiah.yeager@parr.com",
-"first_name": "JEREMIAH",
-"last_name": "YEAGER",
-"company_name": "",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "54e67e9c1787fa059000000e",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "paulf@parr.com",
-"first_name": "Paul",
-"last_name": "Feinauer",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "559590f71787fa7010000d1e",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "debra.boles@parr.com",
-"first_name": "DEBRA",
-"last_name": "BOLES",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5512e62b1787fa1dad00000b",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "janelle.johnson@parr.com",
-"first_name": "JANELLE",
-"last_name": "DALY",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5509ceff1787fa5310000017",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "mike.bierly@parr.com",
-"first_name": "MIKE",
-"last_name": "BIERLY",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "550a05271787fa4e3d000007",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "andonm@parr.com",
-"first_name": "ANDON",
-"last_name": "MARTIN",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5543b7de1787fa71b2000027",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "karen.fugate@parr.com",
-"first_name": "Karen",
-"last_name": "Fugate",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5553dd0e1787fa540900035f",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"company_name": "Parr Cabinet Design Center",
-"email": "oscar.talavera@parr.com",
-"first_name": "OSCAR",
-"last_name": "TALAVERA",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "56ce2ada00d4afef550003a9",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"email": "denise.holland@parr.com",
-"first_name": "Denise",
-"last_name": "Holland",
-"company_name": "",
-"photo_url": ""
-}
-}, {
-"user": {
-"id": "5554d46c1787fa20f8000bc9",
-"account_rights": ["activity", "pipeline", "edit_target", "export"],
-"company_name": "Parr Cabinet Design Center",
-"email": "luis.malvaez@parr.com",
-"first_name": "LUIS",
-"last_name": "MALVAEZ",
-"photo_url": ""
-}
-}],
-"settings": {
-"reminder": {"type": "every_day", "hour": 6},
-"time_zone": "pacifictimeuscanada",
-"date_format": "%m/%d/%Y",
-"listing_size": 25,
-"currency": "USD",
-"currency_symbol": "$",
-"popular_countries": ["US"],
-"deal_stages": [{"stage": 10, "label": "Qualification"}, {
-"stage": 25,
-"label": null
-}, {"stage": 50, "label": "Decision"}, {"stage": 75, "label": null}, {
-"stage": 90,
-"label": "Negotiation"
-}],
-"default_contact_type": "individual",
-"show_tidy_stream": true
-},
-"user": {
-"user": {
-"id": "54e390701787fa07c3000036",
-"account_rights": ["activity", "pipeline", "edit_target", "export", "delete_contacts"],
-"bcc_email": "54e390701787fa07c3000037@users.onepagecrm.com",
-"company_name": "Parr Cabinet Design Center",
-"email": "dixon.oliver@parr.com",
-"first_name": "Dixon",
-"last_name": "Oliver",
-"photo_url": ""
-}
-}
-},
-"tags": {
-"tags": [{
-"name": "Builder",
-"counts": 1,
-"total_count": 78,
-"action_stream_count": 1
-}, {
-"name": "Designer / Architect",
-"counts": 0,
-"total_count": 6,
-"action_stream_count": 0
-}, {
-"name": "Homeowner",
-"counts": 0,
-"total_count": 261,
-"action_stream_count": 0
-}, {
-"name": "Multi Family",
-"counts": 0,
-"total_count": 25,
-"action_stream_count": 0
-}, {
-"name": "Pro Remodeler",
-"counts": 0,
-"total_count": 83,
-"action_stream_count": 0
-}, {
-"name": "R & B Crooke",
-"counts": 0,
-"total_count": 1,
-"action_stream_count": 0
-}, {
-"name": "Retirement Community Developer",
-"counts": 0,
-"total_count": 4,
-"action_stream_count": 0
-}, {
-"name": "Team Member",
-"counts": 0,
-"total_count": 4,
-"action_stream_count": 0
-}, {"name": "vanity", "counts": 0, "total_count": 1, "action_stream_count": 0}, {
-"name": "VIP",
-"counts": 0,
-"total_count": 6,
-"action_stream_count": 0
-}],
-"system_tags": [{"name": "starred", "counts": 2, "total_count": 100}, {
-"name": "waiting",
-"counts": 0,
-"total_count": 36
-}]
-},
-"statuses": [{
-"status": {
-"counts": 36,
-"total_count": 605,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 98
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 8}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 22
-}, {
-"user_id": "54de57221787fa7690000012",
-"counts": 147
-}, {"user_id": "5509f1bf1787fa27c900001a", "counts": 4}, {
-"user_id": "5595905c1787fa7010000c8b",
-"counts": 14
-}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 16
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 3}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 5
-}, {
-"user_id": "5509e9851787fa15d8000017",
-"counts": 16
-}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 11
-}, {
-"user_id": "5512e5f41787fa1cff00000d",
-"counts": 27
-}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 36
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 4}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 11
-}, {
-"user_id": "55665d611787fa2f8b00014f",
-"counts": 16
-}, {"user_id": "54ad75181787fa399b000001", "counts": 0}, {
-"user_id": "55133a391787fa06ae000002",
-"counts": 19
-}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 10
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {
-"user_id": "559590f71787fa7010000d1e",
-"counts": 16
-}, {"user_id": "5512e62b1787fa1dad00000b", "counts": 9}, {
-"user_id": "5509ceff1787fa5310000017",
-"counts": 13
-}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 16
-}, {
-"user_id": "5543b7de1787fa71b2000027",
-"counts": 18
-}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 65
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 1
-}],
-"id": "54ad66481787fa01af000025",
-"status": "lead",
-"text": "Active ",
-"description": "You intend to sell to.",
-"color": "f96600",
-"action_stream_count": 36
-}
-}, {
-"status": {
-"counts": 15,
-"total_count": 317,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 12
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 23}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 5
-}, {"user_id": "54de57221787fa7690000012", "counts": 13}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 1
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 50}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 17
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 1}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 3
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 4}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 41}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 15
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 24
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 28}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 1}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 2
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 10
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 2}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 4
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 12}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 3
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 42}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 3
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 1
-}],
-"id": "54ad6c2c1787fa19e6000001",
-"status": "custom1",
-"text": "Closed",
-"description": "Sold Job or Services",
-"color": "009900",
-"action_stream_count": 15
-}
-}, {
-"status": {
-"counts": 1,
-"total_count": 99,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 7
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 0}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 2
-}, {"user_id": "54de57221787fa7690000012", "counts": 3}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 14}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 2
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 1}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 1
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 1}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 6
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 40}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 1
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 2
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 1}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 1}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 2
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 9}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 1
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 4
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 1}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "54ad66481787fa01af000026",
-"status": "prospect",
-"text": "Lost",
-"description": "Lost Job. Competitor, Style ",
-"color": "cc0000",
-"action_stream_count": 1
-}
-}, {
-"status": {
-"counts": 1,
-"total_count": 68,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 0}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 0
-}, {"user_id": "54de57221787fa7690000012", "counts": 1}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 3
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 21}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 1
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 3}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 1
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 4}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 1
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 1
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 5}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 1
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 1}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 2
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 2}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 7
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 13
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 1}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "54ad66481787fa01af000027",
-"status": "customer",
-"text": "Future Prospect",
-"description": "Bid but customer delayed ",
-"color": "000000",
-"action_stream_count": 1
-}
-}],
-"team_stream": {
-"users": [{
-"user_id": "56cf578e00d4afba61000004",
-"counts": 2
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 60}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 9
-}, {"user_id": "5509f1bf1787fa27c900001a", "counts": 8}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 42
-}, {"user_id": "5631166a1787fa01db000003", "counts": 15}, {
-"user_id": "559590f71787fa7010000d1e",
-"counts": 19
-}, {"user_id": "550a05271787fa4e3d000007", "counts": 27}, {
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 117
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 2}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 2
-}, {"user_id": "54e67e9c1787fa059000000e", "counts": 10}, {
-"user_id": "5509ceff1787fa5310000017",
-"counts": 36
-}, {"user_id": "55133a391787fa06ae000002", "counts": 20}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 12
-}, {"user_id": "54e390701787fa07c3000036", "counts": 53}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 17
-}, {"user_id": "54de57221787fa7690000012", "counts": 164}, {
-"user_id": "55665d611787fa2f8b00014f",
-"counts": 89
-}, {"user_id": "550a041b1787fa4c3700002f", "counts": 29}, {
-"user_id": "56ce2af600d4afef550003f7",
-"counts": 5
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 31}, {
-"user_id": "5595905c1787fa7010000c8b",
-"counts": 99
-}, {"user_id": "54ad75181787fa399b000001", "counts": 3}, {
-"user_id": "5512e5f41787fa1cff00000d",
-"counts": 73
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 4}, {
-"user_id": "5509e9851787fa15d8000017",
-"counts": 23
-}, {"user_id": "559e7cd51787fa2b25000005", "counts": 35}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 85
-}], "all": 0, "private": 0
-},
-"lead_sources": [{
-"counts": 174,
-"total_count": 7,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 15
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 6}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 4
-}, {"user_id": "54de57221787fa7690000012", "counts": 15}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 2}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 1
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 5}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 1
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 22}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 7
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 1}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 2
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 64}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 1
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 6}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 2
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 10}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 10
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "advertisement",
-"text": "Drive By"
-}, {
-"counts": 4,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 1}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 0
-}, {"user_id": "54de57221787fa7690000012", "counts": 0}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 0}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 0}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 3}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 0
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 0}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "email_web",
-"text": "Open House"
-}, {
-"counts": 0,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 0}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 0
-}, {"user_id": "54de57221787fa7690000012", "counts": 0}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 0}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 0}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 0
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 0}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "list_generation",
-"text": "Print"
-}, {
-"counts": 2,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 0}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 0
-}, {"user_id": "54de57221787fa7690000012", "counts": 0}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 1}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 0}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 1
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 0}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "other",
-"text": "Radio- David Boze"
-}, {
-"counts": 4,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 3}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 0
-}, {"user_id": "54de57221787fa7690000012", "counts": 0}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 0}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 1}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 0}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 0
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 0}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "partner",
-"text": "Radio- Lars Larson"
-}, {
-"counts": 242,
-"total_count": 6,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 20
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 9}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 1
-}, {"user_id": "54de57221787fa7690000012", "counts": 71}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 5}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 1
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 1
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 6}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 3
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 6}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 6
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 6
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 1
-}, {"user_id": "55133a391787fa06ae000002", "counts": 5}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 2
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 2
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 13}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 6
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 10}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 11
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 11}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 46
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "referral",
-"text": "Referral"
-}, {
-"counts": 160,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 19
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 3}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 1
-}, {"user_id": "54de57221787fa7690000012", "counts": 24}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 4
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 1}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 1
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 1}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 3
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 11}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 6
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 20}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 1}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 7
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 1
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 3
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 3}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 4}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 7
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 17}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 22
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 1
-}],
-"id": "5526a8641787fa38fc000032",
-"text": "Repeat Customer"
-}, {
-"counts": 2,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 1}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 0
-}, {"user_id": "54de57221787fa7690000012", "counts": 1}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 0}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 0}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 0
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 0}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "seminar",
-"text": "Social Media"
-}, {
-"counts": 2,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 0}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 1
-}, {"user_id": "54de57221787fa7690000012", "counts": 0}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 0}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 0}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 0}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 0}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 0
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 1}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 0}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "social",
-"text": "Tradeshow"
-}, {
-"counts": 26,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 2
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 0}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 2
-}, {"user_id": "54de57221787fa7690000012", "counts": 7}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 0}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 0
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 0
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 1}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 0
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 5}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 3}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 2
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 1
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 1}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 0
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 2}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 0
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "54ad6d6c1787fa1e4e00000e",
-"text": "Website"
-}, {
-"counts": 64,
-"total_count": 0,
-"team_counts": [{
-"user_id": "5512e6751787fa1e5b000020",
-"counts": 0
-}, {"user_id": "5509ebd11787fa1a99000057", "counts": 3}, {
-"user_id": "550a041b1787fa4c3700002f",
-"counts": 4
-}, {"user_id": "54de57221787fa7690000012", "counts": 6}, {
-"user_id": "5509f1bf1787fa27c900001a",
-"counts": 0
-}, {"user_id": "5595905c1787fa7010000c8b", "counts": 1}, {
-"user_id": "559e7cd51787fa2b25000005",
-"counts": 3
-}, {"user_id": "54ad65381787fa7db500001d", "counts": 0}, {
-"user_id": "563bc7821787fa48990018f8",
-"counts": 0
-}, {"user_id": "5509e9851787fa15d8000017", "counts": 0}, {
-"user_id": "54efa0191787fa40ac00000d",
-"counts": 2
-}, {"user_id": "5512e5f41787fa1cff00000d", "counts": 5}, {
-"user_id": "54e390701787fa07c3000036",
-"counts": 0
-}, {"user_id": "56ce2af600d4afef550003f7", "counts": 0}, {
-"user_id": "5509f3fe1787fa2cec000004",
-"counts": 3
-}, {"user_id": "55665d611787fa2f8b00014f", "counts": 1}, {
-"user_id": "54ad75181787fa399b000001",
-"counts": 0
-}, {"user_id": "55133a391787fa06ae000002", "counts": 9}, {
-"user_id": "5631166a1787fa01db000003",
-"counts": 1
-}, {"user_id": "56cf578e00d4afba61000004", "counts": 0}, {
-"user_id": "54e67e9c1787fa059000000e",
-"counts": 0
-}, {"user_id": "559590f71787fa7010000d1e", "counts": 0}, {
-"user_id": "5512e62b1787fa1dad00000b",
-"counts": 0
-}, {"user_id": "5509ceff1787fa5310000017", "counts": 10}, {
-"user_id": "550a05271787fa4e3d000007",
-"counts": 7
-}, {"user_id": "5543b7de1787fa71b2000027", "counts": 6}, {
-"user_id": "5553dd0e1787fa540900035f",
-"counts": 3
-}, {"user_id": "56ce2ada00d4afef550003a9", "counts": 0}, {
-"user_id": "5554d46c1787fa20f8000bc9",
-"counts": 0
-}],
-"id": "word_of_mouth",
-"text": "Word of mouth"
-}],
-"contacts_count": {
-"all": {
-"1": 1,
-"a": 36,
-"b": 101,
-"c": 93,
-"d": 62,
-"e": 19,
-"f": 26,
-"g": 54,
-"h": 89,
-"i": 4,
-"j": 30,
-"k": 53,
-"l": 47,
-"m": 89,
-"n": 26,
-"o": 22,
-"p": 37,
-"q": 4,
-"r": 52,
-"s": 114,
-"t": 38,
-"u": 2,
-"v": 15,
-"w": 64,
-"x": 1,
-"y": 5,
-"z": 5,
-"total_count": 1089
-},
-"users": [{
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5512e6751787fa1e5b000020"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5509ebd11787fa1a99000057"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "550a041b1787fa4c3700002f"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "54de57221787fa7690000012"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5509f1bf1787fa27c900001a"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5595905c1787fa7010000c8b"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "559e7cd51787fa2b25000005"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "54ad65381787fa7db500001d"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "563bc7821787fa48990018f8"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5509e9851787fa15d8000017"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "54efa0191787fa40ac00000d"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5512e5f41787fa1cff00000d"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "54e390701787fa07c3000036"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "56ce2af600d4afef550003f7"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5509f3fe1787fa2cec000004"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "55665d611787fa2f8b00014f"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "54ad75181787fa399b000001"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "55133a391787fa06ae000002"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5631166a1787fa01db000003"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "56cf578e00d4afba61000004"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "54e67e9c1787fa059000000e"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "559590f71787fa7010000d1e"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5512e62b1787fa1dad00000b"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5509ceff1787fa5310000017"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "550a05271787fa4e3d000007"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5543b7de1787fa71b2000027"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5553dd0e1787fa540900035f"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "56ce2ada00d4afef550003a9"
-}, {
-"1": 0,
-"a": 0,
-"b": 0,
-"c": 0,
-"d": 0,
-"e": 0,
-"f": 0,
-"g": 0,
-"h": 0,
-"i": 0,
-"j": 0,
-"k": 0,
-"l": 0,
-"m": 0,
-"n": 0,
-"o": 0,
-"p": 0,
-"q": 0,
-"r": 0,
-"s": 0,
-"t": 0,
-"u": 0,
-"v": 0,
-"w": 0,
-"x": 0,
-"y": 0,
-"z": 0,
-"total_count": 0,
-"user_id": "5554d46c1787fa20f8000bc9"
-}]
-}
-},
-"status": 200,
-"config": {
-"method": "POST",
-"transformRequest": [null],
-"transformResponse": [null],
-"url": "https://app.onepagecrm.com/api/v3/login.json",
-"data": "{\"login\":\"dixon.oliver@parr.com\",\"password\":\"2nephi222\"}",
-"headers": {
-"Accept": "application/json, text/plain, */*",
-"Content-Type": "application/json;charset=utf-8"
-}
-},
-"statusText": "OK"
-}
+
+
