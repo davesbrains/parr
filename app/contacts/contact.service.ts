@@ -5,52 +5,52 @@ import { Observable } from 'rxjs/Rx';
 import { ExceptionService, SpinnerService } from '../blocks/blocks';
 import { CONFIG, MessageService } from '../shared/shared';
 
-let charactersUrl = CONFIG.baseUrls.characters;
+let contactsUrl = CONFIG.baseUrls.contacts;
 
-export interface Character {
+export interface Contact {
   id: number;
   name: string;
   type: string;
 }
 
 @Injectable()
-export class CharacterService {
+export class ContactService {
   constructor(private _http: Http,
     private _exceptionService: ExceptionService,
     private _messageService: MessageService,
     private _spinnerService: SpinnerService) {
-    this._messageService.state.subscribe(state => this.getCharacters());
+    this._messageService.state.subscribe(state => this.getContacts());
   }
 
-  addCharacter(character: Character) {
-    let body = JSON.stringify(character);
+  addContact(contact: Contact) {
+    let body = JSON.stringify(contact);
     this._spinnerService.show();
     return this._http
-      .post(`${charactersUrl}`, body)
+      .post(`${contactsUrl}`, body)
       .map(res => res.json().data)
       .catch(this._exceptionService.catchBadResponse)
       .finally(() => this._spinnerService.hide());
   }
 
-  deleteCharacter(character: Character) {
+  deleteContact(contact: Contact) {
     this._spinnerService.show();
     return this._http
-      .delete(`${charactersUrl}/${character.id}`)
+      .delete(`${contactsUrl}/${contact.id}`)
       .catch(this._exceptionService.catchBadResponse)
       .finally(() => this._spinnerService.hide());
   }
 
-  getCharacters() {
+  getContacts() {
     this._spinnerService.show();
-    return this._http.get(charactersUrl)
-      .map((response: Response) => <Character[]>response.json().data)
+    return this._http.get(contactsUrl)
+      .map((response: Response) => <Contact[]>response.json().data)
       .catch(this._exceptionService.catchBadResponse)
       .finally(() => this._spinnerService.hide());
   }
 
-  getCharacter(id: number) {
+  getContact(id: number) {
     this._spinnerService.show();
-    return this._http.get(`${charactersUrl}/${id}`)
+    return this._http.get(`${contactsUrl}/${id}`)
       .map((response: Response) => response.json().data)
       .catch(this._exceptionService.catchBadResponse)
       .finally(() => this._spinnerService.hide());
@@ -58,12 +58,12 @@ export class CharacterService {
 
   onDbReset = this._messageService.state;
 
-  updateCharacter(character: Character) {
-    let body = JSON.stringify(character);
+  updateContact(contact: Contact) {
+    let body = JSON.stringify(contact);
     this._spinnerService.show();
 
     return this._http
-      .put(`${charactersUrl}/${character.id}`, body)
+      .put(`${contactsUrl}/${contact.id}`, body)
       .catch(this._exceptionService.catchBadResponse)
       .finally(() => this._spinnerService.hide());
   }

@@ -9,7 +9,7 @@ System.register([], function(exports_1, context_1) {
                 baseUrls: {
                     config: 'commands/config',
                     resetDb: 'commands/resetDb',
-                    characters: 'api/contacts.json',
+                    contacts: 'api/contacts.json',
                     vehicles: 'api/vehicles.json'
                 }
             });

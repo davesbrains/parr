@@ -5,7 +5,7 @@ import 'rxjs/Rx'; // load the full rxjs
 
 import { InMemoryBackendConfig, InMemoryBackendService, SEED_DATA } from 'a2-in-memory-web-api/core';
 import { InMemoryStoryService } from '../api/in-memory-story.service';
-import { CharactersComponent, CharacterService } from './characters/characters';
+import { ContactsComponent, ContactService } from './contacts/contacts';
 import { DashboardComponent } from './dashboard/dashboard';
 import { VehiclesComponent } from './vehicles/vehicles';
 import { CONFIG, MessageService } from './shared/shared';
@@ -22,7 +22,7 @@ import { EntityService, ExceptionService, ModalComponent, ModalService, SpinnerC
     provide(SEED_DATA, { useClass: InMemoryStoryService }),
     provide(InMemoryBackendConfig, { useValue: { delay: 600 } }),
     ROUTER_PROVIDERS,
-    CharacterService,
+    ContactService,
     EntityService,
     ExceptionService,
     MessageService,
@@ -34,12 +34,12 @@ import { EntityService, ExceptionService, ModalComponent, ModalService, SpinnerC
 @RouteConfig([
   { path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true },
   { path: '/vehicles/...', name: 'Vehicles', component: VehiclesComponent },
-  { path: '/characters/...', name: 'Characters', component: CharactersComponent },
+  { path: '/contacts/...', name: 'Contacts', component: ContactsComponent },
 ])
 export class AppComponent {
   public menuItems = [
     { caption: 'Dashboard', link: ['Dashboard'] },
-    { caption: 'Characters', link: ['Characters'] },
+    { caption: 'Contacts', link: ['Contacts'] },
     { caption: 'Vehicles', link: ['Vehicles'] }
   ];
 

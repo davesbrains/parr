@@ -11,7 +11,7 @@ System.register(['angular2/core', 'angular2/http', '../blocks/blocks', '../share
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, http_1, blocks_1, shared_1;
-    var charactersUrl, CharacterService;
+    var contactsUrl, ContactService;
     return {
         setters:[
             function (core_1_1) {
@@ -27,68 +27,68 @@ System.register(['angular2/core', 'angular2/http', '../blocks/blocks', '../share
                 shared_1 = shared_1_1;
             }],
         execute: function() {
-            charactersUrl = shared_1.CONFIG.baseUrls.characters;
-            CharacterService = (function () {
-                function CharacterService(_http, _exceptionService, _messageService, _spinnerService) {
+            contactsUrl = shared_1.CONFIG.baseUrls.contacts;
+            ContactService = (function () {
+                function ContactService(_http, _exceptionService, _messageService, _spinnerService) {
                     var _this = this;
                     this._http = _http;
                     this._exceptionService = _exceptionService;
                     this._messageService = _messageService;
                     this._spinnerService = _spinnerService;
                     this.onDbReset = this._messageService.state;
-                    this._messageService.state.subscribe(function (state) { return _this.getCharacters(); });
+                    this._messageService.state.subscribe(function (state) { return _this.getContacts(); });
                 }
-                CharacterService.prototype.addCharacter = function (character) {
+                ContactService.prototype.addContact = function (contact) {
                     var _this = this;
-                    var body = JSON.stringify(character);
+                    var body = JSON.stringify(contact);
                     this._spinnerService.show();
                     return this._http
-                        .post("" + charactersUrl, body)
+                        .post("" + contactsUrl, body)
                         .map(function (res) { return res.json().data; })
                         .catch(this._exceptionService.catchBadResponse)
                         .finally(function () { return _this._spinnerService.hide(); });
                 };
-                CharacterService.prototype.deleteCharacter = function (character) {
+                ContactService.prototype.deleteContact = function (contact) {
                     var _this = this;
                     this._spinnerService.show();
                     return this._http
-                        .delete(charactersUrl + "/" + character.id)
+                        .delete(contactsUrl + "/" + contact.id)
                         .catch(this._exceptionService.catchBadResponse)
                         .finally(function () { return _this._spinnerService.hide(); });
                 };
-                CharacterService.prototype.getCharacters = function () {
+                ContactService.prototype.getContacts = function () {
                     var _this = this;
                     this._spinnerService.show();
-                    return this._http.get(charactersUrl)
+                    return this._http.get(contactsUrl)
                         .map(function (response) { return response.json().data; })
                         .catch(this._exceptionService.catchBadResponse)
                         .finally(function () { return _this._spinnerService.hide(); });
                 };
-                CharacterService.prototype.getCharacter = function (id) {
+                ContactService.prototype.getContact = function (id) {
                     var _this = this;
                     this._spinnerService.show();
-                    return this._http.get(charactersUrl + "/" + id)
+                    return this._http.get(contactsUrl + "/" + id)
                         .map(function (response) { return response.json().data; })
                         .catch(this._exceptionService.catchBadResponse)
                         .finally(function () { return _this._spinnerService.hide(); });
                 };
-                CharacterService.prototype.updateCharacter = function (character) {
+                ContactService.prototype.updateContact = function (contact) {
                     var _this = this;
-                    var body = JSON.stringify(character);
+                    var body = JSON.stringify(contact);
                     this._spinnerService.show();
                     return this._http
-                        .put(charactersUrl + "/" + character.id, body)
+                        .put(contactsUrl + "/" + contact.id, body)
                         .catch(this._exceptionService.catchBadResponse)
                         .finally(function () { return _this._spinnerService.hide(); });
                 };
-                CharacterService = __decorate([
+                ContactService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [http_1.Http, blocks_1.ExceptionService, shared_1.MessageService, blocks_1.SpinnerService])
-                ], CharacterService);
-                return CharacterService;
+                ], ContactService);
+                return ContactService;
             }());
-            exports_1("CharacterService", CharacterService);
+            exports_1("ContactService", ContactService);
         }
     }
 });
-//# sourceMappingURL=character.service.js.map
+//# sourceMappingURL=contact.service.js.map

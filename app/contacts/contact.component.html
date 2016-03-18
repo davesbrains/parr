@@ -1,15 +1,15 @@
 <article class="template animated slideInRight">
-  <div *ngIf="character">
-    <h4>{{editCharacter.name | uppercase}} details</h4>
+  <div *ngIf="contact">
+    <h4>{{editContact.name | uppercase}} details</h4>
 
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <label class="mdl-textfield__label" for="nametext">Name</label>
-      <input type="text" id="nametext" class="mdl-textfield__input" [(ngModel)]="editCharacter.name" />
+      <input type="text" id="nametext" class="mdl-textfield__input" [(ngModel)]="editContact.name" />
     </div>
 
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <label class="mdl-textfield__label" for="sidetext">Side</label>
-      <input type="text" id="sidetext" class="mdl-textfield__input" [(ngModel)]="editCharacter.type" />
+      <label class="mdl-textfield__label" for="sidetext">Type</label>
+      <input type="text" id="sidetext" class="mdl-textfield__input" [(ngModel)]="editContact.type" />
     </div>
 
     <div>

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../characters/characters', '../blocks/blocks'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../contacts/contacts', '../blocks/blocks'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../characters/c
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, Rx_1, characters_1, blocks_1;
+    var core_1, router_1, Rx_1, contacts_1, blocks_1;
     var DashboardComponent;
     return {
         setters:[
@@ -23,31 +23,31 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../characters/c
             function (Rx_1_1) {
                 Rx_1 = Rx_1_1;
             },
-            function (characters_1_1) {
-                characters_1 = characters_1_1;
+            function (contacts_1_1) {
+                contacts_1 = contacts_1_1;
             },
             function (blocks_1_1) {
                 blocks_1 = blocks_1_1;
             }],
         execute: function() {
             DashboardComponent = (function () {
-                function DashboardComponent(_characterService, _router, _toastService) {
-                    this._characterService = _characterService;
+                function DashboardComponent(_contactService, _router, _toastService) {
+                    this._contactService = _contactService;
                     this._router = _router;
                     this._toastService = _toastService;
                 }
-                DashboardComponent.prototype.getCharacters = function () {
+                DashboardComponent.prototype.getContacts = function () {
                     var _this = this;
                     // this._spinnerService.show();
-                    this.characters = this._characterService.getCharacters()
+                    this.contacts = this._contactService.getContacts()
                         .catch(function (e) {
                         _this._toastService.activate("" + e);
                         return Rx_1.Observable.of();
                     });
                     // .finally(() => { this._spinnerService.hide(); })
                 };
-                DashboardComponent.prototype.gotoDetail = function (character) {
-                    var link = ['Characters', 'Character', { id: character.id }];
+                DashboardComponent.prototype.gotoDetail = function (contact) {
+                    var link = ['Contacts', 'Contact', { id: contact.id }];
                     this._router.navigate(link);
                 };
                 DashboardComponent.prototype.ngOnDestroy = function () {
@@ -55,9 +55,9 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../characters/c
                 };
                 DashboardComponent.prototype.ngOnInit = function () {
                     var _this = this;
-                    this.getCharacters();
-                    this._dbResetSubscription = this._characterService.onDbReset
-                        .subscribe(function () { return _this.getCharacters(); });
+                    this.getContacts();
+                    this._dbResetSubscription = this._contactService.onDbReset
+                        .subscribe(function () { return _this.getContacts(); });
                 };
                 DashboardComponent = __decorate([
                     core_1.Component({
@@ -65,7 +65,7 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../characters/c
                         templateUrl: 'app/dashboard/dashboard.component.html',
                         styleUrls: ['app/dashboard/dashboard.component.css']
                     }), 
-                    __metadata('design:paramtypes', [characters_1.CharacterService, router_1.Router, blocks_1.ToastService])
+                    __metadata('design:paramtypes', [contacts_1.ContactService, router_1.Router, blocks_1.ToastService])
                 ], DashboardComponent);
                 return DashboardComponent;
             }());

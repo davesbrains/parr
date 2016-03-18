@@ -1,9 +1,9 @@
-.characters {
+.contacts {
   list-style-type: none;
   padding: 0;
 }
 
-*.characters li {
+*.contacts li {
   padding: 4px;
 }
 

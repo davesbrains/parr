@@ -11,17 +11,17 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var SortCharactersPipe;
+    var SortContactsPipe;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            SortCharactersPipe = (function () {
-                function SortCharactersPipe() {
+            SortContactsPipe = (function () {
+                function SortContactsPipe() {
                 }
-                SortCharactersPipe.prototype.transform = function (value, args) {
+                SortContactsPipe.prototype.transform = function (value, args) {
                     if (!value || !value.sort) {
                         return value;
                     }
@@ -35,14 +35,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         return 0;
                     });
                 };
-                SortCharactersPipe = __decorate([
-                    core_1.Pipe({ name: 'sortCharacters' }), 
+                SortContactsPipe = __decorate([
+                    core_1.Pipe({ name: 'sortContacts' }), 
                     __metadata('design:paramtypes', [])
-                ], SortCharactersPipe);
-                return SortCharactersPipe;
+                ], SortContactsPipe);
+                return SortContactsPipe;
             }());
-            exports_1("SortCharactersPipe", SortCharactersPipe);
+            exports_1("SortContactsPipe", SortContactsPipe);
         }
     }
 });
-//# sourceMappingURL=sort-characters.pipe.js.map
+//# sourceMappingURL=sort-contacts.pipe.js.map
