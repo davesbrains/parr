@@ -6,7 +6,7 @@ import { EntityService, ModalService, ToastService } from '../blocks/blocks';
 import { Contact, ContactService } from '../contacts/contact.service';
 
 @Component({
-  selector: 'story-contact',
+  selector: 'contact-component',
   templateUrl: 'app/contacts/contact.component.html',
   styles: ['.mdl-textfield__label {top: 0;}'],
   directives: [ROUTER_DIRECTIVES]
@@ -47,8 +47,8 @@ export class ContactComponent implements CanDeactivate, OnDestroy, OnInit {
   }
 
   isAddMode() {
-    let id = +this._routeParams.get('id');
-    return isNaN(id);
+    let id = this._routeParams.get('id');
+    return id;
   }
 
   ngOnDestroy() {

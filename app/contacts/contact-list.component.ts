@@ -7,7 +7,7 @@ import { SortContactsPipe } from './sort-contacts.pipe';
 import { FilterService, FilterTextComponent } from '../blocks/blocks';
 
 @Component({
-  selector: 'story-contacts',
+  selector: 'contacts-list-component',
   templateUrl: './app/contacts/contact-list.component.html',
   directives: [FilterTextComponent, ROUTER_DIRECTIVES],
   styleUrls: ['./app/contacts/contact-list.component.css'],

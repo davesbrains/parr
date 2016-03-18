@@ -32,7 +32,7 @@ System.register(['angular2/core', 'angular2/router', './contact.component', './c
                 }
                 ContactsComponent = __decorate([
                     core_1.Component({
-                        selector: 'story-contacts-root',
+                        selector: 'contacts-component-root',
                         template: "\n    <router-outlet></router-outlet>\n  ",
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),

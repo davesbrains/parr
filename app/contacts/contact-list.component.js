@@ -64,7 +64,7 @@ System.register(['angular2/core', 'angular2/router', './contact.service', './sor
                 ], ContactListComponent.prototype, "filterComponent", void 0);
                 ContactListComponent = __decorate([
                     core_1.Component({
-                        selector: 'story-contacts',
+                        selector: 'contacts-list-component',
                         templateUrl: './app/contacts/contact-list.component.html',
                         directives: [blocks_1.FilterTextComponent, router_1.ROUTER_DIRECTIVES],
                         styleUrls: ['./app/contacts/contact-list.component.css'],

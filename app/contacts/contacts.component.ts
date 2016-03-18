@@ -6,7 +6,7 @@ import { ContactListComponent } from './contact-list.component';
 import { ContactService } from './contact.service';
 
 @Component({
-  selector: 'story-contacts-root',
+  selector: 'contacts-component-root',
   template: `
     <router-outlet></router-outlet>
   `,

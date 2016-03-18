@@ -59,8 +59,8 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../con
                     });
                 };
                 ContactComponent.prototype.isAddMode = function () {
-                    var id = +this._routeParams.get('id');
-                    return isNaN(id);
+                    var id = this._routeParams.get('id');
+                    return id;
                 };
                 ContactComponent.prototype.ngOnDestroy = function () {
                     this._dbResetSubscription.unsubscribe();
@@ -131,7 +131,7 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../con
                 ], ContactComponent.prototype, "contact", void 0);
                 ContactComponent = __decorate([
                     core_1.Component({
-                        selector: 'story-contact',
+                        selector: 'contact-component',
                         templateUrl: 'app/contacts/contact.component.html',
                         styles: ['.mdl-textfield__label {top: 0;}'],
                         directives: [router_1.ROUTER_DIRECTIVES]
