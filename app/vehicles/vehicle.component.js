@@ -70,7 +70,7 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../veh
                 };
                 VehicleComponent.prototype.ngOnInit = function () {
                     var _this = this;
-                    componentHandler.upgradeDom();
+                    //componentHandler.upgradeDom();
                     this._getVehicle();
                     this._dbResetSubscription = this._vehicleService.onDbReset
                         .subscribe(function () {

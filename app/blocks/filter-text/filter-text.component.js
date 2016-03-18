@@ -21,7 +21,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             FilterTextComponent = (function () {
                 function FilterTextComponent() {
                     this.changed = new core_1.EventEmitter();
-                    componentHandler.upgradeDom();
+                    //componentHandler.upgradeDom();
                 }
                 FilterTextComponent.prototype.clear = function () {
                     this.filter = '';

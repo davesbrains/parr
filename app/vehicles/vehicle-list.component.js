@@ -50,7 +50,7 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', './vehi
                 };
                 VehicleListComponent.prototype.ngOnInit = function () {
                     var _this = this;
-                    componentHandler.upgradeDom();
+                    //componentHandler.upgradeDom();
                     this.getVehicles();
                     this._dbResetSubscription = this._vehicleService.onDbReset
                         .subscribe(function () { return _this.getVehicles(); });

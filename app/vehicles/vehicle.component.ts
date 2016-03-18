@@ -59,7 +59,7 @@ export class VehicleComponent implements CanDeactivate, OnDestroy, OnInit {
   }
 
   ngOnInit() {
-    componentHandler.upgradeDom();
+    //componentHandler.upgradeDom();
     this._getVehicle();
     this._dbResetSubscription = this._vehicleService.onDbReset
       .subscribe(() => {
