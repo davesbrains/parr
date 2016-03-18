@@ -81,7 +81,7 @@ export class ContactService {
             .finally(() => this._spinnerService.hide());
     }
 
-    getContact(id:number) {
+    getContact(id:string) {
         this._spinnerService.show();
         return this._http.get(`${contactsUrl}/${id}`)
             .map((response:Response) => response.json().data)

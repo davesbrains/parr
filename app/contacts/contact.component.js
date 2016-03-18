@@ -94,11 +94,11 @@ System.register(['angular2/core', 'angular2/router', '../blocks/blocks', '../con
                 };
                 ContactComponent.prototype._getContact = function () {
                     var _this = this;
-                    var id = +this._routeParams.get('id');
-                    if (id === 0)
+                    var id = this._routeParams.get('id');
+                    if (id == null)
                         return;
                     if (this.isAddMode()) {
-                        this.contact = { last_name: '', type: 'dark' };
+                        this.contact = { last_name: '', type: 'individual' };
                         this.editContact = this._entityService.clone(this.contact);
                         return;
                     }

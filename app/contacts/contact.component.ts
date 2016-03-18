@@ -84,10 +84,10 @@ export class ContactComponent implements CanDeactivate, OnDestroy, OnInit {
   }
 
   private _getContact() {
-    let id = +this._routeParams.get('id');
-    if (id === 0) return;
+    let id = this._routeParams.get('id');
+    if (id == null) return;
     if (this.isAddMode()) {
-      this.contact = <Contact>{ last_name: '', type: 'dark' };
+      this.contact = <Contact>{ last_name: '', type: 'individual' };
       this.editContact = this._entityService.clone(this.contact);
       return;
     }
