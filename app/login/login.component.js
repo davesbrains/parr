@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../login/login', '../blocks/blocks'], function(exports_1, context_1) {
+System.register(['angular2/core', 'rxjs/Rx', '../login/login', '../blocks/blocks'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,12 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../login/login'
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, Rx_1, login_1, blocks_1;
+    var core_1, Rx_1, login_1, blocks_1;
     var LoginComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (router_1_1) {
-                router_1 = router_1_1;
             },
             function (Rx_1_1) {
                 Rx_1 = Rx_1_1;
@@ -31,15 +28,16 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../login/login'
             }],
         execute: function() {
             LoginComponent = (function () {
-                function LoginComponent(_loginService, _router, _toastService) {
+                function LoginComponent(_loginService, 
+                    //private _router: Router,
+                    _toastService) {
                     this._loginService = _loginService;
-                    this._router = _router;
                     this._toastService = _toastService;
                 }
-                LoginComponent.prototype.login = function () {
+                LoginComponent.prototype.login = function (user_name, password) {
                     var _this = this;
                     // this._spinnerService.show();
-                    this.userInfo = this._loginService.login()
+                    this.userInfo = this._loginService.login(user_name, password)
                         .catch(function (e) {
                         _this._toastService.activate("" + e);
                         return Rx_1.Observable.of();
@@ -57,7 +55,7 @@ System.register(['angular2/core', 'angular2/router', 'rxjs/Rx', '../login/login'
                         templateUrl: 'app/login/login.component.html',
                         styleUrls: ['app/login/login.component.css']
                     }), 
-                    __metadata('design:paramtypes', [login_1.LoginService, router_1.Router, blocks_1.ToastService])
+                    __metadata('design:paramtypes', [login_1.LoginService, blocks_1.ToastService])
                 ], LoginComponent);
                 return LoginComponent;
             }());

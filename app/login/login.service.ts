@@ -82,9 +82,9 @@ export class LoginService {
         //this._messageService.state.subscribe(state => this.getUser(id));
     }
 
-    login() {
+    login(user_name:string, password:string) {
         this._spinnerService.show();
-        return this._http.get(loginUrl)
+        return this._http.get(`${loginUrl}/${user_name}`)
             .map((response:Response) => <UserInfo>response.json().data)
             .catch(this._exceptionService.catchBadResponse)
             .finally(() => this._spinnerService.hide());

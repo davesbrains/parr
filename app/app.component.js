@@ -95,7 +95,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                         { path: '/dashboard', name: 'Dashboard', component: dashboard_1.DashboardComponent, useAsDefault: true },
                         { path: '/vehicles/...', name: 'Vehicles', component: vehicles_1.VehiclesComponent },
                         { path: '/contacts/...', name: 'Contacts', component: contacts_1.ContactsComponent },
-                        { path: '/login/...', name: 'Login', component: login_1.LoginComponent },
+                        { path: '/login/..', name: 'Login', component: login_1.LoginComponent },
                     ]), 
                     __metadata('design:paramtypes', [shared_1.MessageService, blocks_1.ModalService])
                 ], AppComponent);

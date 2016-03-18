@@ -46,10 +46,10 @@ System.register(['angular2/core', 'angular2/http', '../blocks/blocks', '../share
                     this.onDbReset = this._messageService.state;
                     //this._messageService.state.subscribe(state => this.getUser(id));
                 }
-                LoginService.prototype.login = function () {
+                LoginService.prototype.login = function (user_name, password) {
                     var _this = this;
                     this._spinnerService.show();
-                    return this._http.get(loginUrl)
+                    return this._http.get(loginUrl + "/" + user_name)
                         .map(function (response) { return response.json().data; })
                         .catch(this._exceptionService.catchBadResponse)
                         .finally(function () { return _this._spinnerService.hide(); });

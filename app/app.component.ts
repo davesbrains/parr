@@ -37,7 +37,7 @@ import { EntityService, ExceptionService, ModalComponent, ModalService, SpinnerC
   { path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true },
   { path: '/vehicles/...', name: 'Vehicles', component: VehiclesComponent },
   { path: '/contacts/...', name: 'Contacts', component: ContactsComponent },
-  { path: '/login/...', name: 'Login', component: LoginComponent },
+  { path: '/login/..', name: 'Login', component: LoginComponent },
 ])
 export class AppComponent {
   public menuItems = [

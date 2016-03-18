@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from 'angular2/core';
-import { Router } from 'angular2/router';
+//import { Router } from 'angular2/router';
 import { Observable, Subscription } from 'rxjs/Rx';
 
 import { UserInfo, LoginService } from '../login/login';
@@ -17,12 +17,12 @@ export class LoginComponent implements OnDestroy, OnInit {
 
   constructor(
     private _loginService: LoginService,
-    private _router: Router,
+    //private _router: Router,
     private _toastService: ToastService) { }
 
-  login() {
+  login(user_name:string, password:string) {
     // this._spinnerService.show();
-    this.userInfo = this._loginService.login()
+    this.userInfo = this._loginService.login(user_name, password)
       .catch(e => {
         this._toastService.activate(`${e}`);
         return Observable.of();
