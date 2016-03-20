@@ -1,27 +1,17 @@
-.login-button {
-  width: 200px;
-  height: 70px;
+.login {
+    list-style-type: none;
+    padding: 0;
 }
 
-.mdl-cell--col-3 {
-  width: 25%;
+*.login li {
+    padding: 4px;
 }
 
-@media (max-width: 1024px) {
-  .mdl-cell.mdl-cell--3-col > button {
-    width: 180px;
-    line-height: 18px;
-    font-size: 12px;
-  }
+.list-text,
+.mdl-card__title-text {
+    font-size: 16px;
 }
 
-@media (max-width: 839px) and (min-width: 480px){
-  .mdl-cell.mdl-cell--3-col {
-    width: 25%;
-  }
-  .mdl-cell.mdl-cell--3-col > button {
-    width: 120px;
-    line-height: 18px;
-    font-size: 12px;
-  }
+.mdl-card {
+    min-height: 60px;
 }

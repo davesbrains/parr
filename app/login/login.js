@@ -1,4 +1,4 @@
-System.register(['./login.component', './login.service'], function(exports_1, context_1) {
+System.register(['./login.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     function exportStar_1(m) {
@@ -12,12 +12,10 @@ System.register(['./login.component', './login.service'], function(exports_1, co
         setters:[
             function (login_component_1_1) {
                 exportStar_1(login_component_1_1);
-            },
-            function (login_service_1_1) {
-                exportStar_1(login_service_1_1);
             }],
         execute: function() {
         }
     }
 });
+//export * from './login.service'; 
 //# sourceMappingURL=login.js.map

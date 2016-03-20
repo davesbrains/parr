@@ -1,24 +1,34 @@
 <article class="template animated slideInRight">
-  <h4>Login</h4>
-  <div>
-    <div class="mdl-grid">
+    <div *ngIf="editUserLogin">
+        <h4>Login</h4>
+        <h4>{{editUserLogin.user_name | uppercase}} details</h4>
+        <div>
+            <div class="mdl-grid">
 
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <label class="mdl-textfield__label" for="nametext">OnePageCRM User Name (Parr email address)</label>
-        <input type="text" id="nametext" class="mdl-textfield__input" [(ngModel)]="user_name" />
-      </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" for="user_name">OnePageCRM User Name (Parr email
+                        address)</label>
+                    <input type="text" id="user_name" class="mdl-textfield__input"
+                           [(ngModel)]="editUserLogin.user_name"/>
+                </div>
 
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <label class="mdl-textfield__label" for="typetext">Password</label>
-        <input type="text" id="typetext" class="mdl-textfield__input" [(ngModel)]="password" />
-      </div>
-      <div>
-        <button class="login-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect
-      mdl-button--accent" (click)="login()">Login</button>
-      </div>
+                &nbsp;&nbsp;&nbsp;
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" for="passwordtext">Password</label>
+                    <input type="text" id="passwordtext" class="mdl-textfield__input"
+                           [(ngModel)]="editUserLogin.password"/>
+                </div>
 
+                &nbsp;&nbsp;&nbsp;
+                <div>
+                    <button class="login-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect
+      mdl-button--accent" (click)="login()">Login
+                    </button>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
 </article>
 
 

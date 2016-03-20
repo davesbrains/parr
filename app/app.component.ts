@@ -6,7 +6,8 @@ import 'rxjs/Rx'; // load the full rxjs
 import { InMemoryBackendConfig, InMemoryBackendService, SEED_DATA } from 'a2-in-memory-web-api/core';
 import { InMemoryStoryService } from '../api/in-memory-story.service';
 import { ContactsComponent, ContactService } from './contacts/contacts';
-import { LoginComponent, LoginService } from './login/login';
+//import { LoginComponent, LoginService } from './login/login';
+import { LoginComponent } from './login/login';
 import { DashboardComponent } from './dashboard/dashboard';
 import { VehiclesComponent } from './vehicles/vehicles';
 import { CONFIG, MessageService } from './shared/shared';
@@ -24,7 +25,7 @@ import { EntityService, ExceptionService, ModalComponent, ModalService, SpinnerC
     provide(InMemoryBackendConfig, { useValue: { delay: 600 } }),
     ROUTER_PROVIDERS,
     ContactService,
-    LoginService,
+    //LoginService,
     EntityService,
     ExceptionService,
     MessageService,
@@ -47,6 +48,8 @@ export class AppComponent {
     { caption: 'Login', link: ['Login'] }
   ];
 
+  public isLoggedIn = false;
+    
   constructor(
     private _messageService: MessageService,
     private _modalService: ModalService) {

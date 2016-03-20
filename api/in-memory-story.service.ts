@@ -301,7 +301,7 @@ export class InMemoryStoryService {
                             "name": "Location",
                             "position": 0,
                             "type": "select_box",
-                            "reminder_days": null
+                            "reminder_days": ""
                         }
                     },
                     {
@@ -311,7 +311,7 @@ export class InMemoryStoryService {
                             "name": "PARR ACCT #",
                             "position": 1,
                             "type": "single_line_text",
-                            "reminder_days": null
+                            "reminder_days": ""
                         }
                     }
                 ],

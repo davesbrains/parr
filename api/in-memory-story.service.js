@@ -307,7 +307,7 @@ System.register([], function(exports_1, context_1) {
                                         "name": "Location",
                                         "position": 0,
                                         "type": "select_box",
-                                        "reminder_days": null
+                                        "reminder_days": ""
                                     }
                                 },
                                 {
@@ -317,7 +317,7 @@ System.register([], function(exports_1, context_1) {
                                         "name": "PARR ACCT #",
                                         "position": 1,
                                         "type": "single_line_text",
-                                        "reminder_days": null
+                                        "reminder_days": ""
                                     }
                                 }
                             ],

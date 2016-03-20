@@ -59,6 +59,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                         { caption: 'Vehicles', link: ['Vehicles'] },
                         { caption: 'Login', link: ['Login'] }
                     ];
+                    this.isLoggedIn = false;
                 }
                 AppComponent.prototype.resetDb = function () {
                     var _this = this;
@@ -82,7 +83,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', 'rxjs/Rx',
                             core_1.provide(core_2.InMemoryBackendConfig, { useValue: { delay: 600 } }),
                             router_1.ROUTER_PROVIDERS,
                             contacts_1.ContactService,
-                            login_1.LoginService,
+                            //LoginService,
                             blocks_1.EntityService,
                             blocks_1.ExceptionService,
                             shared_1.MessageService,
